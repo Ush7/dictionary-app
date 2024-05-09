@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
+import Results from "./Results";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [wordResult, setWordResult] = useState(null);
   function handleResponse(response) {
-    console.log(response);
+    //console.log(response);
+    setWordResult(response.data);
+    //console.log(response.data.meanings[0].definition);
   }
   function receiveWord(event) {
     event.preventDefault();
@@ -29,6 +33,7 @@ export default function Dictionary() {
           onChange={handleWord}
         />
       </form>
+      <Results wordResult={wordResult} />
     </div>
   );
 }
