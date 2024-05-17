@@ -7,7 +7,7 @@ export default function Meaning(props) {
   console.log(props.meaning);
   return (
     <div className="Meaning">
-      <div classname="Part-Speech">{props.meaning.partOfSpeech}</div>
+      <div className="Part-Speech">{props.meaning.partOfSpeech}</div>
       <div>
         {props.meaning.definition}
         <Example example={props.meaning.example} />
