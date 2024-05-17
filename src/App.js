@@ -13,8 +13,24 @@ export default function App() {
           <h4>What word do you want to look up?</h4>
         </header>{" "}
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="universe" />
         </main>
+        <footer className="App-footer">
+          {" "}
+          This project coded by{" "}
+          <a
+            href="https://github.com/Ush7/dictionary-app"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Unisha Shilpakar
+          </a>{" "}
+          and is{" "}
+          <a href="https://github.com/Ush7" rel="noreferrer" target="_blank">
+            open-sourced
+          </a>{" "}
+          on Github
+        </footer>
       </div>
     </div>
   );

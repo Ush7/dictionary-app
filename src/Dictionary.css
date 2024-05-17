@@ -1,3 +1,10 @@
 .Dictionary {
   text-align: left;
 }
+.Dictionary section {
+  background-color: #fcfefe;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 7px 2px 16px rgba(0, 0, 0, 0.2);
+}

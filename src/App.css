@@ -1,3 +1,7 @@
+body {
+  background: #ececec;
+}
+
 .App {
   max-width: 960px;
   margin: 0 auto;
@@ -9,7 +13,12 @@
 }
 
 .App-logo {
-  max-width: 200px;
+  max-width: 120px;
   display: block;
   margin: 0 auto;
+}
+.App-footer {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
 }
